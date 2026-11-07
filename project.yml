@@ -1,0 +1,32 @@
+name: TaneTane
+options:
+  bundleIdPrefix: com.tanetane
+  deploymentTarget:
+    iOS: "16.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  TaneTane:
+    type: application
+    platform: iOS
+    sources:
+      - TaneTane
+    info:
+      path: TaneTane/Info.plist
+      properties:
+        CFBundleDisplayName: Tane Tane
+        UILaunchScreen: {}
+        NSMicrophoneUsageDescription: Kendi sesini kaydedip dinleyebilmen için mikrofon gerekir.
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.tanetane.app
+        TARGETED_DEVICE_FAMILY: "1,2"
